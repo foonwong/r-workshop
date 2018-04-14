@@ -1,0 +1,2 @@
+"0","dayplot <- bio_df %>% ggplot(aes(x = Day, y = Survival)) "
+"0","dayplot + geom_point()"

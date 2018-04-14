@@ -1,0 +1,4 @@
+"0","# Import data set"
+"0","bio_df <- readxl::read_xlsx('data/SSMI Data Sheet Spray Trial 1.xlsx')"
+"0","# Taking a quick look at our data is easy"
+"0","bio_df"

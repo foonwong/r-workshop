@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1523732567100.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2721694664",
+    "id" : "6FE2CDEE",
+    "lastKnownWriteTime" : 1523747321,
+    "last_content_update" : 1523747321853,
+    "path" : "C:/Users/tortilla/Git/r-workshop/demo.R",
+    "project_path" : "demo.R",
+    "properties" : {
+        "cursorPosition" : "42,0",
+        "marks" : "<:12,0\n>:20,1",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

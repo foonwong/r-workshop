@@ -1,0 +1,2 @@
+"0","# Scatter plot matrix"
+"0","plot(x = bio_df$Sex, y = bio_df$Survival)"

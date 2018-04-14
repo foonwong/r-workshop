@@ -1,0 +1,4 @@
+"0","# Selecting columns"
+"0","bio_df %>% "
+"0","  select(Mating_status:Eggs) %>% "
+"0","  head()"

@@ -1,0 +1,4 @@
+"0","bio_df %>% "
+"0","  select(Mating_status, Survival) %>% "
+"0","  group_by(Mating_status) %>% "
+"0","  summarize(mean_sur = mean(Survival))"
