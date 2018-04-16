@@ -19,17 +19,29 @@ library(ggplot2)
 ## Great resources
 
 - [R for data science](http://r4ds.had.co.nz/): workflow, dplyr and ggplot basics
+- [Stat 545](http://stat545.com/topics.html): Fantastic tutorials related to data exploration and analysis.
 - [Advanced R](http://adv-r.had.co.nz/): data structure, writing better functions, R programming in general
 - [Sytle guide](http://style.tidyverse.org/): write organized, readable code!
 
 
 ## Install packages
 
-- Use command `install.packages("package-name")`
+- Use command `install.packages("package-name")` (Don't forget the quotes!)
 - We will use the package collection [`tidyverse`](https://www.tidyverse.org/packages)
 - `tidyvserse` includes
   - [ggplot](http://ggplot2.tidyverse.org/)
   - [dplyr](http://dplyr.tidyverse.org/)
+- Load packages using `library(package-name)` (No quotes!)
+
+## Some quick tips
+
+- `<-` assignment operator (Alt/Option -)
+- Ctrl + Enter to send line to console (you can highlight multiple lines)
+- Ctrl + Shift + Enter runs the entire script
+- Many more ways to send code, see: Rstudio menu > code
+- Remember to use **tab completion**!
+- Get help using `?functionName` or `??partialFunctionName`
+- Other keyboard short cuts: Rstudio menu > Tools > keyboard
 
 ## Importing data
 - Excel files: use the package `readxl`
@@ -59,7 +71,7 @@ bio_df
 ```
 
 ## dplyr basics
-- The [pipe](http://r4ds.had.co.nz/pipes.html) %>%:  
+- The [pipe](http://r4ds.had.co.nz/pipes.html) %>% (Ctrl + Shift + M)
 - Pick observations by their values `filter()`.
 - Reorder the rows `arrange()`.
 - Pick variables by their names `select()`.
@@ -80,6 +92,8 @@ bio_df %>%
 bio_df %>% 
   filter(Sex == "F")
 ```
+- [List of logic operators](https://www.statmethods.net/management/operators.html)
+
 
 ## Grouping and summarize
 ```{r echo = T}
@@ -123,10 +137,13 @@ plot(x = bio_df$Sex, y = bio_df$Survival)
 ```
 
 ## ggplot
-```{r, echo = TRUE}
+```{r, echo = TRUE, fig.height=3}
 bio_df %>% ggplot(aes(x = Sex, y = Survival)) +
   geom_boxplot()
 ```
+- Note ggplot grammar is `ggplot()` **+** `geom_somethingsomething()`. This
+happened due to historical reasons.
+
 
 ## Why ggplot
 ```{r, echo = TRUE}
